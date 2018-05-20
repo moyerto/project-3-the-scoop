@@ -1,0 +1,30 @@
+users:
+  moe:
+    username: moe
+    articleIds:
+      - 1
+    commentIds:
+      - 1
+articles:
+  '1':
+    id: 1
+    title: test
+    url: www.codeacademy.com
+    username: moe
+    commentIds:
+      - 1
+    upvotedBy:
+      - moe
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        body: does this even work?
+        username: moe
+        articleId: 1
+        upvotedBy: []
+        downvotedBy: []
+nextArticleId: 2
+comments:
+  '1': *ref_0
+nextCommentId: 2
